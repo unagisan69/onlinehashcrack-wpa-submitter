@@ -18,7 +18,7 @@ This script intentionally avoids common mistakes that lead to HTTP 429 rate-limi
 
 ---
 
-##What this script does not do (by design)
+## What this script does not do (by design)
 
 - No retries on HTTP 429 responses
 - No automatic batching across multiple API calls
@@ -29,7 +29,7 @@ These omissions are intentional to ensure safety, predictability, and compliance
 
 ---
 
-##How it works
+## How it works
 
 1. Reads all *.hc22000 files in the current directory
 2. Combines hashes and removes duplicates while preserving order
@@ -41,7 +41,7 @@ These omissions are intentional to ensure safety, predictability, and compliance
 
 ---
 
-##Requirements
+## Requirements
 
 - Python 3.8 or newer
 - requests library
@@ -52,7 +52,7 @@ pip install requests
 
 ---
 
-Configuration
+## Configuration
 
 Edit the following values at the top of the script:
 
@@ -60,7 +60,7 @@ API_KEY = "sk_XXXXXXXXXXXXXXXXXXXXXXXX"
 
 ---
 
-Usage
+## Usage
 
 List existing tasks on your OHC account:
 
@@ -70,7 +70,7 @@ Upload hashes (normal mode):
 
 ./online-hash-cracker-upload.py
 
-Behavior:
+## Behavior:
 
 - Skips hashes already submitted
 - Uploads only new hashes
@@ -78,7 +78,7 @@ Behavior:
 
 ---
 
-Input format
+## Input format
 
 - Place one or more .hc22000 files in the same directory as the script
 - One hash per line
@@ -86,7 +86,7 @@ Input format
 
 ---
 
-Overflow handling
+## Overflow handling
 
 If more than 50 new hashes remain after de-duplication:
 
@@ -99,13 +99,13 @@ You can trim inputs and rerun safely.
 
 ---
 
-Disclaimer
+## Disclaimer
 
 Use this script only for hashes you own or have explicit authorization to test.
 You are responsible for complying with OnlineHashCrack’s Terms of Service and all applicable laws.
 
 ---
 
-License
+## License
 
 MIT License. Use responsibly.
