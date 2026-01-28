@@ -6,7 +6,7 @@ This script intentionally avoids common mistakes that lead to HTTP 429 rate-limi
 
 ---
 
-Features
+##Features
 
 - One-shot upload: submits exactly one API request per run
 - Duplicate-safe: checks existing OHC tasks and skips hashes already submitted
@@ -18,7 +18,7 @@ Features
 
 ---
 
-What this script does not do (by design)
+##What this script does not do (by design)
 
 - No retries on HTTP 429 responses
 - No automatic batching across multiple API calls
@@ -29,7 +29,7 @@ These omissions are intentional to ensure safety, predictability, and compliance
 
 ---
 
-How it works
+##How it works
 
 1. Reads all *.hc22000 files in the current directory
 2. Combines hashes and removes duplicates while preserving order
@@ -41,7 +41,7 @@ How it works
 
 ---
 
-Requirements
+##Requirements
 
 - Python 3.8 or newer
 - requests library
