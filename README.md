@@ -57,9 +57,6 @@ Configuration
 Edit the following values at the top of the script:
 
 API_KEY = "sk_XXXXXXXXXXXXXXXXXXXXXXXX"
-API_URL = "https://api.onlinehashcrack.com/v2"
-
-Do not commit your real API key to a public repository.
 
 ---
 
